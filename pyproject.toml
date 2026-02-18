@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ttime"
+version = "1.0.0"
+description = "A working and customizable countdown timer in the terminal."
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "rich",
+    "pyfiglet",
+    "playsound3"
+]
+
+[project.scripts]
+ttime = "ttime.main:main"
+
+[tool.setuptools]
+packages = ["ttime"]
+
+[tool.setuptools.package-data]
+ttime = ["*.wav"]
