@@ -2,7 +2,7 @@
 
 > **A fully customizable, sci-fi style countdown timer for your terminal.**
 
-`tTime` brings big ASCII art numbers, smooth animations, and audio alerts directly to your command line. Perfect for coding sprints, tea brewing, or orbital launch sequences.
+`tTime` brings big ASCII art numbers, smooth animations, and audio alerts directly to your command line. Perfect for tea brewing, game timers, or keeping track of your dinner in the oven.
 
 ![Main Timer](screenshots/timer.png)
 
@@ -53,6 +53,8 @@ ttime -H 1 -M 30 -S 10
 ### Customization
 
 Make it look how you want!
+
+ttime uses rich and pyfiglet which is a fork of figlet for use in python. You can use any of the fonts from [figlet](https://www.figlet.org/examples.html) along with the styles and colors from [rich](https://rich.readthedocs.io/en/latest/style.html) to make the timer look however you want!
 
 **Matrix Style (Green text, Green border, Digital font):**
 ```bash
